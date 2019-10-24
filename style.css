@@ -51,8 +51,43 @@ main {
   background-color: #ffffff;
 }
 
+h2 {
+  margin: 0;
+  padding: 0;
+  color: #445161;
+  font-size: 30px;
+  text-align: center;
+}
+
 .about {
   height: 345px;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.about-description {
+  width: 732px;
+  float: left;
+  margin-left: 50px;
+  box-sizing: border-box;
+}
+
+.about h2 {
+  text-align: left;
+}
+
+.about p {
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about video {
+  width: 430px;
+  height: 245px;
+  float: right;
+  margin-right: 50px;
+  background-color: #445161;
 }
 
 .advantages {
