@@ -4,200 +4,266 @@
   <meta charset="utf-8">
   <title>Sample Project</title>
   <link rel="stylesheet" type="text/css" href="styles/style.css">
-  <link rel='stylesheet' href='packages/font-awesome-4.7.0/css/font-awesome.min.css'>
+  <script src="https://use.fontawesome.com/577652a882.js"></script>
 </head>
 <body>
   <div class="container">
-
-    <header>
-      <div class="product-description">
-        <h1 class="product-name">Product name</h1>
-        <ul class="product-features">
-          <li>Put on this page information about your product</li>
-          <li>A detailed description of your product</li>
-          <li>Tell us about the advantages and merits</li>
-          <li>Associate the page with the payment system</li>
+   
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <h1 class="main-header__title">Product name</h1>
+        <ul class="main-header__list">
+          <li class="main-header__list-item">Put on this page information about your product</li>
+          <li class="main-header__list-item">A detailed description of your product</li>
+          <li class="main-header__list-item">Tell us about the advantages and merits</li>
+          <li class="main-header__list-item">Associate the page with the payment system</li>
         </ul>
       </div>
-      <img src="" class="product-image">
+      <div class="main-header__photo"></div>
     </header>
 
-    <main>
-      <section class="about">
-        <div class="about-description">
-          <h2>About your product</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
-          <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+    <main class="main">
+
+      <section class="product-description">
+        <div class="product-description__wrapper">
+          <h2 class="product-description__title main__title">About your product</h2>
+          <p class="product-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
+          <p class="product-description__text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
         </div>
-        <video></video>
+
+        <div class="product-description__video">
+          <video controls preload="metadata" poster="video/snapshots/Go-Goat.jpg" loop autoplay>
+            <source src="video/MP4/Go-Goat.mp4" type="video/mp4">
+            <source src="video/WEBM/Go-Goat.webm" type="video/webm">
+            <source src="video/OGV/Go-Goat.ogv" type="video/ogg">
+            Данный формат видео не поддерживается
+          </video>
+        </div>
       </section>
-      <section class="advantages">
-        <h2>Dignity and pluses product</h2>
-        <ul class="column-1">
-          <li>Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
-          <li>Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
-          <li>Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
-        </ul>
-        <ul class="column-2">
-          <li>Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
-          <li>Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
-          <li>Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
-        </ul>
+
+      <section class="product-advantages">
+        <h2 class="product-advantages__title main__title">Dignity and pluses product</h2>
+        
+        <div class="product-advantages__wrapper">
+          <div class="product-advantages__item">
+            <details class="product-advantages__details">
+              <summary class="product-advantages__summary">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</summary>
+              <p class="product-advantages__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptatibus ea libero, consectetur tempore natus, labore dolorum molestias! Laboriosam a eaque, sapiente odit. Tenetur ducimus asperiores quo. Sit, quasi, provident!</p>
+            </details>
+          </div>
+          <div class="product-advantages__item">
+            <details class="product-advantages__details">
+              <summary class="product-advantages__summary">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</summary>
+              <p class="product-advantages__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptatibus ea libero, consectetur tempore natus, labore dolorum molestias! Laboriosam a eaque, sapiente odit. Tenetur ducimus asperiores quo. Sit, quasi, provident!</p>
+            </details>
+          </div>
+          <div class="product-advantages__item">
+            <details class="product-advantages__details">
+              <summary class="product-advantages__summary">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</summary>
+              <p class="product-advantages__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptatibus ea libero, consectetur tempore natus, labore dolorum molestias! Laboriosam a eaque, sapiente odit. Tenetur ducimus asperiores quo. Sit, quasi, provident!</p>
+            </details>
+          </div>
+        </div>
+
+        <div class="product-advantages__wrapper">
+          <div class="product-advantages__item">
+            <details class="product-advantages__details">
+              <summary class="product-advantages__summary">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</summary>
+              <p class="product-advantages__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptatibus ea libero, consectetur tempore natus, labore dolorum molestias! Laboriosam a eaque, sapiente odit. Tenetur ducimus asperiores quo. Sit, quasi, provident!</p>
+            </details>
+          </div>
+          <div class="product-advantages__item">
+            <details class="product-advantages__details">
+              <summary class="product-advantages__summary">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</summary>
+              <p class="product-advantages__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptatibus ea libero, consectetur tempore natus, labore dolorum molestias! Laboriosam a eaque, sapiente odit. Tenetur ducimus asperiores quo. Sit, quasi, provident!</p>
+            </details>
+          </div>
+          <div class="product-advantages__item">
+            <details class="product-advantages__details">
+              <summary class="product-advantages__summary">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</summary>
+              <p class="product-advantages__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptatibus ea libero, consectetur tempore natus, labore dolorum molestias! Laboriosam a eaque, sapiente odit. Tenetur ducimus asperiores quo. Sit, quasi, provident!</p>
+            </details>
+          </div>
+        </div>
+
       </section>
 
       <section class="screenshots">
-        <h2>Scrinshots</h2>    
-        <div class="screenshots-wrap">
-          <figure>
-            <img src="">
-          </figure>
-          <figcaption>
-            <h3>The description for the image</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
-          </figcaption>
-        </div>
-        <div class="screenshots-wrap">
-          <figure>
-            <img src="">
-          </figure>
-          <figcaption>
-            <h3>The description for the image</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
-          </figcaption>
-        </div>
-        <div class="screenshots-wrap">
-          <figure>
-            <img src="">
-          </figure>
-          <figcaption>
-            <h3>The description for the image</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
-          </figcaption>
-        </div>
-        <div class="screenshots-wrap">
-          <figure>
-            <img src="">
-          </figure>
-          <figcaption>
-            <h3>The description for the image</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
-          </figcaption>
+        <h2 class="screenshots__title main__title">Scrinshots</h2>
+
+        <div class="screenshots__wrapper">    
+          <article class="screenshots__article">
+            <figure class="screenshots__figure">
+              <img src="#" alt="Image description" class="screenshots__image">
+            </figure>
+            <figcaption class="screenshots__figcaption">
+              <h3 class="screenshots__figcaption-title">The description for the image</h3>
+              <p class="screenshots__figcaption-text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+            </figcaption>
+          </article>
+
+          <article class="screenshots__article">
+            <figure class="screenshots__figure">
+              <img src="#" alt="Image description" class="screenshots__image">
+            </figure>
+            <figcaption class="screenshots__figcaption">
+              <h3 class="screenshots__figcaption-title">The description for the image</h3>
+              <p class="screenshots__figcaption-text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+            </figcaption>
+          </article>
+
+          <article class="screenshots__article">
+            <figure class="screenshots__figure">
+              <img src="#" alt="Image description" class="screenshots__image">
+            </figure>
+            <figcaption class="screenshots__figcaption">
+              <h3 class="screenshots__figcaption-title">The description for the image</h3>
+              <p class="screenshots__figcaption-text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+            </figcaption>
+          </article>
+
+          <article class="screenshots__article">
+            <figure class="screenshots__figure">
+              <img src="#" alt="Image description" class="screenshots__image">
+            </figure>
+            <figcaption class="screenshots__figcaption">
+              <h3 class="screenshots__figcaption-title">The description for the image</h3>
+              <p class="screenshots__figcaption-text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+            </figcaption>
+          </article>
         </div>
       </section>
+
       <section class="reviews">
-        <h2>Reviews</h2>   
-        <div class='review-wrap'>
-          <div class="review-image"></div>
-          <div class='review-description'>
-            <p>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-            <br><span>Lourens S.</span>
+        <h2 class="reviews__title main__title">Reviews</h2>  
+        
+        <article class="reviews__post">  
+          <div class="reviews__image"></div>
+          <div class="review__description">
+            <p class="reviews__text">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+            <br><span class="reviews__text-writer">Lourens S.</span>
             </p>
           </div>
-        </div>
-        <div class='review-wrap'> 
-          <div class="review-image"></div>
-          <div class='review-description'>
-            <p>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderi t. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-            <br><span>Lourens S.</span>
+        </article>
+
+        <article class="reviews__post">  
+          <div class="reviews__image"></div>
+          <div class="review__description">
+            <p class="reviews__text">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+            <br><span class="reviews__text-writer">Lourens S.</span>
             </p>
           </div>
-        </div>
-        <div class='review-wrap'> 
-          <div class="review-image"></div>
-          <div class='review-description'>
-            <p>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-            <br><span>Lourens S.</span>
+        </article>
+
+        <article class="reviews__post">  
+          <div class="reviews__image"></div>
+          <div class="review__description">
+            <p class="reviews__text">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+            <br><span class="reviews__text-writer">Lourens S.</span>
             </p>
           </div>
-        </div>
-        <div class='review-wrap'> 
-          <div class="review-image"></div>
-          <div class='review-description'>
-            <p>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-            <br><span>Lourens S.</span>
+        </article>
+
+        <article class="reviews__post">  
+          <div class="reviews__image"></div>
+          <div class="review__description">
+            <p class="reviews__text">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+            <br><span class="reviews__text-writer">Lourens S.</span>
             </p>
           </div>
+        </article>
+
+      </section>
+
+      <section class="buy">
+        <h2 class="buy__title main__title">Buy it now</h2>
+        
+        <div class="buy__wrapper">
+
+          <div class="buy__package">
+            <h3 class="buy__package-title">Standart</h3>
+            <span class="buy__package-price">$100</span>
+            <ol class="buy__list">
+              <li class="buy__lis-item">Porro officia cumque sint deleniti;</li>
+              <li class="buy__lis-item">Тemo facere rem vitae odit;</li>
+              <li class="buy__lis-item">Cum odio, iste quia doloribus autem;</li>
+              <li class="buy__lis-item">Aperiam nulla ea neque.</li>
+            </ol>
+            <button class="buy__button">BUY</button>
+          </div>
+
+          <div class="buy__package">
+            <h3 class="buy__package-title">Premium</h3>
+            <span class="buy__package-price">$150</span>
+            <ol class="buy__list">
+              <li class="buy__lis-item">Porro officia cumque sint deleniti;</li>
+              <li class="buy__lis-item">Тemo facere rem vitae odit;</li>
+              <li class="buy__lis-item">Cum odio, iste quia doloribus autem;</li>
+              <li class="buy__lis-item">Aperiam nulla ea neque.</li>
+              <li class="buy__lis-item">Porro officia cumque sint deleniti; </li>
+              <li class="buy__lis-item">Тemo facere rem vitae odit;</li>
+              <li class="buy__lis-item">Cum odio, iste quia doloribus autem;</li>
+              <li class="buy__lis-item">Aperiam nulla ea neque.</li>
+            </ol>
+            <button class="buy__button">BUY</button>
+          </div>
+
+          <div class="buy__package">
+            <h3 class="buy__package-title">Lux</h3>
+            <span class="buy__package-price">$200</span>
+            <ol class="buy__list">
+              <li class="buy__lis-item">Porro officia cumque sint deleniti; </li>
+              <li class="buy__lis-item">Тemo facere rem vitae odit;</li>
+              <li class="buy__lis-item">Cum odio, iste quia doloribus autem;</li>
+              <li class="buy__lis-item">Aperiam nulla ea neque.</li>
+              <li class="buy__lis-item">Porro officia cumque sint deleniti; </li>
+              <li class="buy__lis-item">Тemo facere rem vitae odit;</li>
+              <li class="buy__lis-item">Cum odio, iste quia doloribus autem;</li>
+              <li class="buy__lis-item">Aperiam nulla ea neque.</li>
+              <li class="buy__lis-item">Porro officia cumque sint deleniti; </li>
+              <li class="buy__lis-item">Тemo facere rem vitae odit;</li>
+              <li class="buy__lis-item">Cum odio, iste quia doloribus autem;</li>
+              <li class="buy__lis-item">Aperiam nulla ea neque.</li>
+            </ol>
+            <button class="buy__button">BUY</button>
+          </div>
+
         </div>
       </section>
-      <section class="buy">
-        <h2>Buy it now</h2>
-        <div class="buy-blocks-wrap">
-          <div class="buy-block buy-block-standart">
-            <h3>Standart</h3>
-            <span>$100</span>
-            <ol>
-              <li>Porro officia cumque sint deleniti;</li>
-              <li>Тemo facere rem vitae odit;</li>
-              <li>Cum odio, iste quia doloribus autem;</li>
-              <li>Aperiam nulla ea neque.</li>
-            </ol>
-            <button>BUY</button>
-          </div>
 
-          <div class="buy-block buy-block-premium">
-            <h3>Premium</h3>
-            <span>$150</span>
-            <ol>
-              <li>Porro officia cumque sint deleniti;</li>
-              <li>Тemo facere rem vitae odit;</li>
-              <li>Cum odio, iste quia doloribus autem;</li>
-              <li>Aperiam nulla ea neque.</li>
-              <li>Porro officia cumque sint deleniti; </li>
-              <li>Тemo facere rem vitae odit;</li>
-              <li>Cum odio, iste quia doloribus autem;</li>
-              <li>Aperiam nulla ea neque.</li>
-            </ol>
-            <button>BUY</button>
-          </div>
+      <section class="contacts"> 
+        <h2 class="contacts__title main__title">Contacts</h2>
 
-          <div class="buy-block buy-block-lux">
-            <h3>Lux</h3>
-            <span>$200</span>
-            <ol>
-              <li>Porro officia cumque sint deleniti; </li>
-              <li>Тemo facere rem vitae odit;</li>
-              <li>Cum odio, iste quia doloribus autem;</li>
-              <li>Aperiam nulla ea neque.</li>
-              <li>Porro officia cumque sint deleniti; </li>
-              <li>Тemo facere rem vitae odit;</li>
-              <li>Cum odio, iste quia doloribus autem;</li>
-              <li>Aperiam nulla ea neque.</li>
-              <li>Porro officia cumque sint deleniti; </li>
-              <li>Тemo facere rem vitae odit;</li>
-              <li>Cum odio, iste quia doloribus autem;</li>
-              <li>Aperiam nulla ea neque.</li>
-            </ol>
-            <button>BUY</button>
+        <div class="contacts__feedback">
+          <form class="contacts__feedback-form">
+            <input type="text" name="name" value="Your name" class="contacts__feedback-name">
+            <input type="text" name="email" value="Your email" class="contacts__feedback-email">
+            <textarea class="contacts__feedback-message">Your message</textarea>
+            <input type="button" name="send" value="Send" class="contacts__feedback-button">
+          </form>
+        </div>
+
+        <div class="contacts__addres">
+          <address>
+            <p class="contacts__addres-skype contacts__addres-connect">here_your_login_skype</p>
+            <p class="contacts__addres-icq contacts__addres-connect">279679659</p>
+            <p class="contacts__addres-email contacts__addres-connect">psdhtmlcss@mail.ru</p>
+            <p class="contacts__addres-phone contacts__addres-connect">80 00 4568 55 55</p>
+          </address>
+          <div class="contacts__addres-social">
+            <a href="#" class="contacts__addres-social-link contacts__addres-twitter"></a>
+            <a href="#" class="contacts__addres-social-link contacts__addresk-fb"></a>
+            <a href="#" class="contacts__addres-social-link contacts__addres-in"></a>
+            <a href="#" class="contacts__addres-social-link contacts__addres-g"></a>
+            <a href="#" class="contacts__addres-social-link contacts__addres-yt"></a>
           </div>
         </div>
       </section>
 
     </main>
 
-    <footer>
-      <section class="contacts">
-        <h2>Contacts</h2>
-        <div class="form-wrap">
-          <form>
-            <input type="text" name="name" value="Your name">
-            <input type="text" name="email" value="Your email">
-            <textarea>Your message</textarea>
-            <input type="button" name="send" value="Send">
-          </form>
-          <div class="social-buttons"></div>
-        </div>
-        <div class="adress-wrap">
-          <address>
-            <p class="skype">here_your_login_skype</p>
-            <p class="icq">279679659</p>
-            <p class="email">psdhtmlcss@mail.ru</p>
-            <p class="phone">80 00 4568 55 55</p>
-          </address>
-        </div>
-      </section>
-
-      <section class="copyright">Copyright &copy; 2014 Product name PSD HTML CSS
-      </section>
+    <footer class="main__footer">
+      <p class="main-footer__copyright">Copyright &copy; 2014 Product name PSD HTML CSS</p>
     </footer>
 
   </div>
